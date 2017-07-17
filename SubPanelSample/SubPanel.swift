@@ -13,7 +13,6 @@ class SubPanel : UIView {
     var str : NSString = "sample"
     let textStyle = NSMutableParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
     
-    
     func initilize() {
         KvoModel.sharedInstance.addObserver(self, forKeyPath: "point", options: [.new], context: nil)
     }
