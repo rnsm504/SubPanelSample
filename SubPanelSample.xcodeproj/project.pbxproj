@@ -14,6 +14,9 @@
 		F23D2E351F1BADBA00E1EB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D2E331F1BADBA00E1EB43 /* LaunchScreen.storyboard */; };
 		F23D2E401F1BADBA00E1EB43 /* SubPanelSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2E3F1F1BADBA00E1EB43 /* SubPanelSampleTests.swift */; };
 		F23D2E4B1F1BADBA00E1EB43 /* SubPanelSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2E4A1F1BADBA00E1EB43 /* SubPanelSampleUITests.swift */; };
+		F23D2E591F1BB32600E1EB43 /* SubPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2E581F1BB32600E1EB43 /* SubPanel.swift */; };
+		F254596F1F1CC61F006AFE78 /* KvoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254596E1F1CC61F006AFE78 /* KvoModel.swift */; };
+		F25E8E691F1C590600E736A9 /* RasenLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25E8E681F1C590600E736A9 /* RasenLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F23D2E461F1BADBA00E1EB43 /* SubPanelSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubPanelSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D2E4A1F1BADBA00E1EB43 /* SubPanelSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubPanelSampleUITests.swift; sourceTree = "<group>"; };
 		F23D2E4C1F1BADBA00E1EB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23D2E581F1BB32600E1EB43 /* SubPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubPanel.swift; sourceTree = "<group>"; };
+		F254596E1F1CC61F006AFE78 /* KvoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KvoModel.swift; sourceTree = "<group>"; };
+		F25E8E681F1C590600E736A9 /* RasenLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasenLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				F23D2E2A1F1BADBA00E1EB43 /* AppDelegate.swift */,
 				F23D2E2C1F1BADBA00E1EB43 /* ViewController.swift */,
+				F254596E1F1CC61F006AFE78 /* KvoModel.swift */,
+				F25E8E681F1C590600E736A9 /* RasenLayer.swift */,
 				F23D2E2E1F1BADBA00E1EB43 /* Main.storyboard */,
+				F23D2E581F1BB32600E1EB43 /* SubPanel.swift */,
 				F23D2E311F1BADBA00E1EB43 /* Assets.xcassets */,
 				F23D2E331F1BADBA00E1EB43 /* LaunchScreen.storyboard */,
 				F23D2E361F1BADBA00E1EB43 /* Info.plist */,
@@ -258,6 +267,9 @@
 			files = (
 				F23D2E2D1F1BADBA00E1EB43 /* ViewController.swift in Sources */,
 				F23D2E2B1F1BADBA00E1EB43 /* AppDelegate.swift in Sources */,
+				F23D2E591F1BB32600E1EB43 /* SubPanel.swift in Sources */,
+				F254596F1F1CC61F006AFE78 /* KvoModel.swift in Sources */,
+				F25E8E691F1C590600E736A9 /* RasenLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +540,7 @@
 				F23D2E511F1BADBA00E1EB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F23D2E521F1BADBA00E1EB43 /* Build configuration list for PBXNativeTarget "SubPanelSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +549,7 @@
 				F23D2E541F1BADBA00E1EB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F23D2E551F1BADBA00E1EB43 /* Build configuration list for PBXNativeTarget "SubPanelSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +558,7 @@
 				F23D2E571F1BADBA00E1EB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
