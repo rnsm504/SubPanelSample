@@ -18,8 +18,16 @@ class KvoModel : NSObject {
     }
     
     @objc dynamic var point : CGPoint = CGPoint(x: 0, y: 0)
+    @objc dynamic var text : String = ""
+    
+    private var chgFlg = false
     
     func update(point : CGPoint) {
         self.point = point
+    }
+    
+    func centerUpdate() {
+        chgFlg = !chgFlg
+        self.text = chgFlg ?  "1234567890" : "abcdefghijklmnopqrstuvwxyz"
     }
 }

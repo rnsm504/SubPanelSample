@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         
         scrollView.addGestureRecognizer(tap)
         
+        KvoModel.sharedInstance.addObserver(self, forKeyPath: "text", options: [.new], context: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,5 +54,15 @@ class ViewController: UIViewController {
         
         KvoModel.sharedInstance.update(point: point)
     }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        if(keyPath == "text"){
+            let lbl = scrollView.subviews[0] as! UILabel
+            lbl.text = KvoModel.sharedInstance.text
+            scrollView.setNeedsDisplay()
+        }
+    }
+
 }
 
